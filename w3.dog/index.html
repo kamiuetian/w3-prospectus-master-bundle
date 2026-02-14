@@ -428,7 +428,7 @@ body { background: var(--bg1); }
       statusEl.textContent = 'Sending…';
       const fd = new FormData(form);
       const payload = Object.fromEntries(fd.entries());
-      payload.domain = window.location.hostname || 'w3.dog';
+      payload.domain = payload.domain || window.location.hostname || (window.location.pathname.split('/').filter(Boolean)[0] || '');
       try {
         const res = await fetch('https://w3.mortgage/api/inquiry.php', {
           method: 'POST',
