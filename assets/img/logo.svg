@@ -1,0 +1,7 @@
+<svg width="420" height="64" viewBox="0 0 420 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ranzo Tech LLC">
+  <rect width="420" height="64" rx="12" fill="#0B0F14"/>
+  <path d="M24 49V15h15c7.8 0 12.9 4 12.9 10.9 0 4.4-2.2 7.7-6 9.2L53.8 49H44l-5.9-10.2H32.8V49H24zm8.8-17.3h6.5c3.7 0 5.9-1.5 5.9-4.7 0-3.1-2.2-4.7-5.9-4.7h-6.5v9.4z" fill="#F4F1EA"/>
+  <path d="M60.5 49V15h28.8v7.9H69.3v4.3h18.7v7.2H69.3v6.7h20.0V49H60.5z" fill="#C7A96B"/>
+  <text x="100" y="37" fill="#F4F1EA" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="800" letter-spacing="1">RANZO TECH</text>
+  <text x="100" y="53" fill="#A9B2BE" font-size="10.5" font-family="IBM Plex Mono, Menlo, monospace" letter-spacing="1.2">DOMAINS • DIGITAL PROPERTIES</text>
+</svg>

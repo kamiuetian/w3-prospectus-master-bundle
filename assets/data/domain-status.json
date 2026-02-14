@@ -1,0 +1,9 @@
+{
+  "updated": "2026-02-13",
+  "notes": "Edit statuses below. Allowed values: open, under_contract_review, sold.",
+  "domains": {
+    "w3.democrat": "under_contract_review",
+    "w3.republican": "under_contract_review",
+    "w3.apartments": "under_contract_review"
+  }
+}

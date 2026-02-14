@@ -1,0 +1,49 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#fade)"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.06">
+    <!-- vertical -->
+    <line x1="0" y1="0" x2="0" y2="600"/>
+<line x1="60" y1="0" x2="60" y2="600"/>
+<line x1="120" y1="0" x2="120" y2="600"/>
+<line x1="180" y1="0" x2="180" y2="600"/>
+<line x1="240" y1="0" x2="240" y2="600"/>
+<line x1="300" y1="0" x2="300" y2="600"/>
+<line x1="360" y1="0" x2="360" y2="600"/>
+<line x1="420" y1="0" x2="420" y2="600"/>
+<line x1="480" y1="0" x2="480" y2="600"/>
+<line x1="540" y1="0" x2="540" y2="600"/>
+<line x1="600" y1="0" x2="600" y2="600"/>
+<line x1="660" y1="0" x2="660" y2="600"/>
+<line x1="720" y1="0" x2="720" y2="600"/>
+<line x1="780" y1="0" x2="780" y2="600"/>
+<line x1="840" y1="0" x2="840" y2="600"/>
+<line x1="900" y1="0" x2="900" y2="600"/>
+<line x1="960" y1="0" x2="960" y2="600"/>
+<line x1="1020" y1="0" x2="1020" y2="600"/>
+<line x1="1080" y1="0" x2="1080" y2="600"/>
+<line x1="1140" y1="0" x2="1140" y2="600"/>
+<line x1="1200" y1="0" x2="1200" y2="600"/>
+    <!-- horizontal -->
+    <line x1="0" y1="0" x2="1200" y2="0"/>
+<line x1="0" y1="60" x2="1200" y2="60"/>
+<line x1="0" y1="120" x2="1200" y2="120"/>
+<line x1="0" y1="180" x2="1200" y2="180"/>
+<line x1="0" y1="240" x2="1200" y2="240"/>
+<line x1="0" y1="300" x2="1200" y2="300"/>
+<line x1="0" y1="360" x2="1200" y2="360"/>
+<line x1="0" y1="420" x2="1200" y2="420"/>
+<line x1="0" y1="480" x2="1200" y2="480"/>
+<line x1="0" y1="540" x2="1200" y2="540"/>
+<line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+  <g stroke="#C7A96B" stroke-opacity="0.14">
+    <path d="M0 420 C 240 340, 420 520, 720 420 C 900 360, 1020 280, 1200 320" fill="none"/>
+    <path d="M0 250 C 250 220, 430 320, 720 260 C 930 220, 1040 160, 1200 180" fill="none"/>
+  </g>
+</svg>

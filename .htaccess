@@ -1,0 +1,24 @@
+# Ranzo Tech LLC — optional Apache configuration
+# Upload this file to your web root (public_html) if using Apache.
+# Redirect legacy W3.Diamond page to W3.Diamonds
+Redirect 301 /domains/w3-diamond/ /domains/w3-diamonds/
+
+
+# Custom 404
+ErrorDocument 404 /404.html
+
+# Security headers (best-effort; some hosts override)
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+</IfModule>
