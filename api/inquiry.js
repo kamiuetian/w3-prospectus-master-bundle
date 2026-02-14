@@ -9,6 +9,10 @@ function clean(value) {
   return String(value || "").trim().replace(/[\r\n]+/g, " ");
 }
 
+function env(name, fallback = "") {
+  return String(process.env[name] || fallback).trim();
+}
+
 function normalizeDomain(input) {
   const raw = clean(input).toLowerCase();
   if (!raw) return "";
@@ -120,19 +124,19 @@ module.exports = async (req, res) => {
       return json(res, 400, { ok: false, error: "Please enter a message (10+ characters)." });
     }
 
-    const smtpHost = process.env.SMTP_HOST || "smtppro.zoho.com";
-    const smtpPort = Number(process.env.SMTP_PORT || 465);
-    const smtpEncryption = (process.env.SMTP_ENCRYPTION || "ssl").toLowerCase();
-    const smtpUser = process.env.SMTP_USERNAME || "";
-    const smtpPass = process.env.SMTP_PASSWORD || "";
+    const smtpHost = env("SMTP_HOST", "smtppro.zoho.com");
+    const smtpPort = Number(env("SMTP_PORT", "465"));
+    const smtpEncryption = env("SMTP_ENCRYPTION", "ssl").toLowerCase();
+    const smtpUser = env("SMTP_USERNAME");
+    const smtpPass = env("SMTP_PASSWORD");
 
     if (!smtpUser || !smtpPass) {
       return json(res, 500, { ok: false, error: "SMTP is not configured." });
     }
 
     const domain = normalizeDomain(payload.domain || req.headers.origin || req.headers.referer || "");
-    const toEmail = process.env.INQUIRY_TO_EMAIL || smtpUser;
-    const fromName = process.env.INQUIRY_FROM_NAME || "W3 Domain Inquiries";
+    const toEmail = env("INQUIRY_TO_EMAIL", smtpUser);
+    const fromName = env("INQUIRY_FROM_NAME", "W3 Domain Inquiries");
 
     const transporter = nodemailer.createTransport({
       host: smtpHost,
