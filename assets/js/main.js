@@ -61,10 +61,10 @@ document.addEventListener('click', function(e){
     }
   }
 
-  // Simple client-side validation hints
+  // Client-side validation + Vercel API submission for legacy PHP form actions
   const forms = document.querySelectorAll('form[data-rt-form]');
   forms.forEach(form => {
-    form.addEventListener('submit', function(e){
+    form.addEventListener('submit', async function(e){
       const email = form.querySelector('input[name="email"]');
       if(email && email.value){
         const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
@@ -72,6 +72,46 @@ document.addEventListener('click', function(e){
           e.preventDefault();
           alert('Please enter a valid email address.');
           email.focus();
+          return;
+        }
+      }
+
+      const action = (form.getAttribute('action') || '').trim().toLowerCase();
+      if(!action.includes('/form/contact.php')) return;
+
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+      const prevBtnText = submitBtn ? (submitBtn.textContent || submitBtn.value || '') : '';
+      if(submitBtn){
+        submitBtn.disabled = true;
+        if(submitBtn.tagName === 'BUTTON') submitBtn.textContent = 'Sending...';
+        if(submitBtn.tagName === 'INPUT') submitBtn.value = 'Sending...';
+      }
+
+      try{
+        const fd = new FormData(form);
+        const payload = Object.fromEntries(fd.entries());
+        payload.domain = payload.domain || payload.domain_interest || (window.location.pathname.split('/').filter(Boolean)[0] || window.location.hostname || '');
+
+        const res = await fetch('/api/inquiry', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(() => ({}));
+        if(res.ok && data.ok){
+          window.location.assign('/thank-you/');
+          return;
+        }
+        alert(data.error || 'Delivery failed. Please try again or email us directly.');
+      }catch(_err){
+        alert('Network error. Please try again or email us directly.');
+      }finally{
+        if(submitBtn){
+          submitBtn.disabled = false;
+          if(submitBtn.tagName === 'BUTTON') submitBtn.textContent = prevBtnText || 'Submit';
+          if(submitBtn.tagName === 'INPUT') submitBtn.value = prevBtnText || 'Submit';
         }
       }
     });

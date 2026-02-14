@@ -430,7 +430,7 @@ body { background: var(--bg1); }
       const payload = Object.fromEntries(fd.entries());
       payload.domain = payload.domain || window.location.hostname || (window.location.pathname.split('/').filter(Boolean)[0] || '');
       try {
-        const res = await fetch('https://w3.mortgage/api/inquiry.php', {
+        const res = await fetch('/api/inquiry', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
