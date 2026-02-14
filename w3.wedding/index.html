@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3.WEDDING | Own the W3.WEDDING Naming Layer.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    [x-cloak] { display: none !important; }
+    body { color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+    .serif { font-family: 'Cormorant Garamond', serif; }
+    
+:root {
+  --accent1:#fb7185;
+  --accent2:#f5d0fe;
+  --accent3:#60a5fa;
+  --bg1:#040508;
+  --bg2:#12061b;
+}
+body { background: var(--bg1); }
+.merit-gradient {
+  background: linear-gradient(135deg, var(--accent2) 0%, var(--accent1) 50%, var(--accent3) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.glass-panel { background: rgba(255,255,255,0.02); backdrop-filter: blur(40px); border: 1px solid rgba(255,255,255,0.06); }
+.library-bg {
+  position: fixed; inset: 0; z-index: -1;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255,255,255,0.04) 0%, transparent 40%),
+    radial-gradient(circle at 18% 20%, color-mix(in srgb, var(--accent1) 20%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 82% 30%, color-mix(in srgb, var(--accent3) 16%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 50% 55%, var(--bg2) 0%, var(--bg1) 60%);
+}
+.vertical-line {
+  position: absolute; width: 1px; height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.04), transparent);
+  top: 0;
+}
+.table-row:hover { background: rgba(255,255,255,0.04); }
+.logo-tile { height: 46px; }
+/* Make the table usable on small screens */
+@media (max-width: 768px) {
+  .bench-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 760px; }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="library-bg">
+    <div class="vertical-line" style="left: 18%;"></div>
+    <div class="vertical-line" style="left: 38%;"></div>
+    <div class="vertical-line" style="left: 58%;"></div>
+    <div class="vertical-line" style="left: 78%;"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 px-6 md:px-10 py-6 md:py-8 flex justify-between items-center border-b border-white/5 backdrop-blur-3xl bg-black/20">
+    <div class="flex items-center gap-4">
+      <div class="w-8 h-8 border border-white/20 flex items-center justify-center font-bold text-[8px] italic">W3</div>
+      <span class="font-bold tracking-[0.55em] text-[10px] uppercase">W3.WEDDING</span>
+    </div>
+    <div class="hidden lg:flex gap-12 text-[9px] uppercase tracking-[0.5em] font-bold opacity-30">
+      <a href="#thesis" class="hover:text-white transition">Thesis</a>
+      <a href="#moat" class="hover:text-white transition">Strategic Moat</a>
+      <a href="#valuation" class="hover:text-white transition">Comparable Sales</a>
+      <a href="#faq" class="hover:text-white transition">Q&A</a>
+    </div>
+    <button id="openModalTop" class="px-7 py-2 glass-panel rounded-full text-[9px] font-bold uppercase tracking-[0.3em] hover:bg-white hover:text-black transition border-white/10">
+      M&A PROSPECTUS
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32 md:pt-28">
+    <div class="inline-block px-6 py-2 mb-10 glass-panel rounded-full border-white/10 shadow-xl">
+      <span class="text-[9px] font-bold opacity-70 uppercase tracking-[0.6em] merit-gradient">
+        Tokenization • Verification • Fractional Ownership
+      </span>
+    </div>
+
+    <h1 class="serif text-6xl md:text-[9rem] mb-10 tracking-tighter leading-[0.85] italic">
+      Own the W3<br>
+      <span class="merit-gradient font-light not-italic uppercase tracking-widest text-4xl md:text-[5.5rem]">Tokenization • Verification • Fractional ownership.</span>
+    </h1>
+
+    <p class="max-w-5xl text-lg md:text-2xl opacity-40 font-light mb-14 leading-relaxed">
+      <strong>W3.WEDDING</strong> is a premium naming-layer asset designed for the mainstream Web3 era—
+      where <strong>tokenized real-world assets</strong>, <strong>fractional access</strong>, and <strong>verifiable provenance</strong>
+      become normal infrastructure. This is the front door for a category platform.
+    </p>
+
+    <div class="flex flex-col gap-6 items-center">
+      <button id="openModalHero" class="px-14 md:px-20 py-6 md:py-7 bg-white text-black font-extrabold uppercase tracking-[0.5em] text-[10px] md:text-xs hover:scale-[1.03] transition-all shadow-[0_0_80px_rgba(255,255,255,0.12)]">
+        Request Acquisition Brief
+      </button>
+      <p class="text-[10px] uppercase tracking-[0.4em] opacity-30 font-bold italic">
+        Private Transfer • Escrow Close • Domain property of Ranzo Tech LLC
+      </p>
+    </div>
+
+    <div class="mt-14 max-w-6xl w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div class="glass-panel logo-tile rounded-2xl border-white/10 flex items-center justify-center px-5">
+            <span class="text-[10px] font-bold uppercase tracking-[0.45em] opacity-60 whitespace-nowrap">Custody</span>
+          </div>
+<div class="glass-panel logo-tile rounded-2xl border-white/10 flex items-center justify-center px-5">
+            <span class="text-[10px] font-bold uppercase tracking-[0.45em] opacity-60 whitespace-nowrap">Exchange</span>
+          </div>
+<div class="glass-panel logo-tile rounded-2xl border-white/10 flex items-center justify-center px-5">
+            <span class="text-[10px] font-bold uppercase tracking-[0.45em] opacity-60 whitespace-nowrap">RWA Platform</span>
+          </div>
+<div class="glass-panel logo-tile rounded-2xl border-white/10 flex items-center justify-center px-5">
+            <span class="text-[10px] font-bold uppercase tracking-[0.45em] opacity-60 whitespace-nowrap">Compliance</span>
+          </div>
+<div class="glass-panel logo-tile rounded-2xl border-white/10 flex items-center justify-center px-5">
+            <span class="text-[10px] font-bold uppercase tracking-[0.45em] opacity-60 whitespace-nowrap">Payments</span>
+          </div>
+<div class="glass-panel logo-tile rounded-2xl border-white/10 flex items-center justify-center px-5">
+            <span class="text-[10px] font-bold uppercase tracking-[0.45em] opacity-60 whitespace-nowrap">Institutional</span>
+          </div>
+    </div>
+  </section>
+
+  <!-- Thesis -->
+  <section id="thesis" class="py-28 md:py-44 px-6 md:px-10 lg:px-24 bg-black/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 md:gap-24 items-start">
+      <div>
+        <h2 class="text-[10px] uppercase tracking-[0.6em] text-slate-500 font-bold mb-8 italic">01. THE THESIS</h2>
+        <h3 class="serif text-5xl md:text-6xl font-light mb-10 italic leading-tight text-white">The Naming Layer<br>as Capital.</h3>
+        <p class="opacity-50 text-base md:text-lg font-light leading-relaxed mb-8">
+          W3.WEDDING is a high-clarity W3 identity built to sell the next era of digital goods: tokenized assets, fractional ownership, verification, and programmable commerce. As blockchain adoption becomes a mainstream layer, the brand that owns the category name owns the conversation.
+        </p>
+        <p class="opacity-45 text-base md:text-lg font-light leading-relaxed mb-10">
+          The “future of living” is increasingly digital: ownership, access, memberships, insurance, and identity
+          become programmable. In that world, the domain is not decoration—it is the <strong>root identity</strong> the market rallies around.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="glass-panel p-8 rounded-3xl border-white/10">
+            <div class="text-3xl font-extralight serif italic text-white">RWA</div>
+            <div class="text-[9px] uppercase font-bold opacity-30 tracking-[0.2em] mt-2">Real‑World Asset<br>Tokenization</div>
+          </div>
+          <div class="glass-panel p-8 rounded-3xl border-white/10">
+            <div class="text-3xl font-extralight serif italic text-white">FRACT</div>
+            <div class="text-[9px] uppercase font-bold opacity-30 tracking-[0.2em] mt-2">Fractional Ownership<br>& Access</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-panel p-10 md:p-14 rounded-[3rem] border-white/10 relative overflow-hidden" id="moat">
+        <h4 class="text-[10px] uppercase tracking-[0.6em] text-slate-500 font-bold mb-10 text-center">Strategic Competitive Moat</h4>
+        <div class="space-y-9">
+          <div class="flex items-start gap-6">
+            <div class="w-10 h-10 glass-panel border-white/20 rounded flex items-center justify-center font-bold text-white/50 italic">01</div>
+            <p class="text-sm md:text-[15px] opacity-55 leading-relaxed">
+              <strong class="text-white">Category dominance:</strong> The domain reads like the default destination for its category—short, memorable, and globally legible.
+            </p>
+          </div>
+<div class="flex items-start gap-6">
+            <div class="w-10 h-10 glass-panel border-white/20 rounded flex items-center justify-center font-bold text-white/50 italic">02</div>
+            <p class="text-sm md:text-[15px] opacity-55 leading-relaxed">
+              <strong class="text-white">Tokenization-native narrative:</strong> Built for tokenized assets: fractional ownership, compliant transfers, and verifiable provenance.
+            </p>
+          </div>
+<div class="flex items-start gap-6">
+            <div class="w-10 h-10 glass-panel border-white/20 rounded flex items-center justify-center font-bold text-white/50 italic">03</div>
+            <p class="text-sm md:text-[15px] opacity-55 leading-relaxed">
+              <strong class="text-white">Institutional posture:</strong> Feels credible for partnerships, custody, compliance, and enterprise integration—key for mainstream adoption.
+            </p>
+          </div>
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="glass-panel rounded-2xl p-6 border-white/10">
+            <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40">Signal</div>
+            <div class="mt-2 text-lg font-semibold">W3 = modern infrastructure</div>
+          </div>
+          <div class="glass-panel rounded-2xl p-6 border-white/10">
+            <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40">Trust</div>
+            <div class="mt-2 text-lg font-semibold">Verification-first posture</div>
+          </div>
+          <div class="glass-panel rounded-2xl p-6 border-white/10">
+            <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40">Moat</div>
+            <div class="mt-2 text-lg font-semibold">Defensive category hold</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-14 md:mt-20">
+      <h4 class="text-[10px] uppercase tracking-[0.6em] text-slate-500 font-bold mb-10 italic">02. STRATEGIC USE CASES</h4>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-50 mb-3">01. RWA tokenization portal</div>
+          <div class="text-lg md:text-xl font-semibold leading-snug mb-3">Tokenize real-world assets with clear rules, custody, and redemption pathways.</div>
+          <div class="text-[11px] uppercase tracking-[0.35em] opacity-40 font-bold">Example route</div>
+          <div class="mt-2 font-mono text-sm opacity-70 break-all">w3.wedding/issuance</div>
+        </div>
+<div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-50 mb-3">02. Marketplace + liquidity layer</div>
+          <div class="text-lg md:text-xl font-semibold leading-snug mb-3">A destination brand for primary issuance and compliant secondary trading.</div>
+          <div class="text-[11px] uppercase tracking-[0.35em] opacity-40 font-bold">Example route</div>
+          <div class="mt-2 font-mono text-sm opacity-70 break-all">w3.wedding/market</div>
+        </div>
+<div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-50 mb-3">03. Verification & provenance hub</div>
+          <div class="text-lg md:text-xl font-semibold leading-snug mb-3">Proof-of-asset, audit trails, and certificate lookup—built for trust.</div>
+          <div class="text-[11px] uppercase tracking-[0.35em] opacity-40 font-bold">Example route</div>
+          <div class="mt-2 font-mono text-sm opacity-70 break-all">w3.wedding/verify</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valuation / Comparable Sales -->
+  <section id="valuation" class="py-28 md:py-44 px-6 md:px-10 text-center">
+    <h2 class="text-xs uppercase tracking-[0.6em] text-slate-500 font-bold mb-16 italic">03. Asset Benchmarking Analysis</h2>
+
+    <div class="max-w-6xl mx-auto glass-panel rounded-[2.5rem] overflow-hidden border-white/10 shadow-2xl bench-wrap">
+      <table class="w-full text-left">
+        <thead class="border-b border-white/10 opacity-30 text-[9px] uppercase tracking-widest font-bold">
+          <tr>
+            <th class="p-8 md:p-12">Comparable Asset</th>
+            <th class="p-8 md:p-12">Sector / Thesis</th>
+            <th class="p-8 md:p-12 text-right">Public Benchmark</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm opacity-75">
+          <tr class="table-row border-b border-white/5 transition">
+              <td class="p-8 md:p-12 font-bold italic">FB.com</td>
+              <td class="p-8 md:p-12 opacity-70">Acronym / internal platform identity</td>
+              <td class="p-8 md:p-12 text-right font-bold text-white">$8,500,000</td>
+            </tr>
+<tr class="table-row border-b border-white/5 transition">
+              <td class="p-8 md:p-12 font-bold italic">Z.com</td>
+              <td class="p-8 md:p-12 opacity-70">Single-character .com</td>
+              <td class="p-8 md:p-12 text-right font-bold text-white">$6,800,000</td>
+            </tr>
+<tr class="table-row border-b border-white/5 transition">
+              <td class="p-8 md:p-12 font-bold italic">iCloud.com</td>
+              <td class="p-8 md:p-12 opacity-70">Product naming-layer asset</td>
+              <td class="p-8 md:p-12 text-right font-bold text-white">~$5,200,000</td>
+            </tr>
+<tr class="table-row border-b border-white/5 transition">
+              <td class="p-8 md:p-12 font-bold italic">Toys.com</td>
+              <td class="p-8 md:p-12 opacity-70">Retail category keyword</td>
+              <td class="p-8 md:p-12 text-right font-bold text-white">$5,100,000</td>
+            </tr><tr class="table-row border-b border-white/5 transition">
+              <td class="p-8 md:p-12 font-bold italic">Category keyword (private)</td>
+              <td class="p-8 md:p-12 opacity-70">Comparable vertical asset</td>
+              <td class="p-8 md:p-12 text-right font-bold text-white/80">$xxx,xxx / Undisclosed</td>
+            </tr>
+            <tr class="table-row transition text-white">
+              <td class="p-8 md:p-12 font-bold italic underline">W3.WEDDING</td>
+              <td class="p-8 md:p-12">Tokenized category infrastructure</td>
+              <td class="p-8 md:p-12 text-right font-bold tracking-widest merit-gradient">[M&A BRIEFING]</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="max-w-5xl mx-auto mt-10 text-left">
+      <div class="glass-panel rounded-3xl p-8 md:p-10 border-white/10">
+        <div class="text-[10px] uppercase tracking-[0.55em] font-bold opacity-40 mb-3">Interpretation</div>
+        <p class="opacity-55 leading-relaxed text-sm md:text-base">
+          Comparable sales show what institutions pay for naming-layer assets when the domain becomes a distribution channel.
+          <strong>W3.WEDDING</strong> is positioned as a 6–7 figure strategic acquisition because it can become the
+          default interface for tokenization, verification, and fractional access in its category—while also serving as a defensive moat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24 md:py-36 px-6 md:px-10 bg-black/40 border-y border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-xs uppercase tracking-[0.6em] text-slate-500 font-bold mb-10 italic">04. Q&A</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40 mb-3">Q</div>
+          <div class="text-lg font-semibold mb-3">Is this affiliated with any standards organization or brand?</div>
+          <div class="text-sm md:text-[15px] opacity-55 leading-relaxed">No. This is a privately owned domain asset. Any references to standards or industries are descriptive and do not imply affiliation.</div>
+        </div>
+<div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40 mb-3">Q</div>
+          <div class="text-lg font-semibold mb-3">Is this only for crypto?</div>
+          <div class="text-sm md:text-[15px] opacity-55 leading-relaxed">No. The blockchain narrative is optional, but increasingly important. The brand works today as a modern digital platform identity; tokenization and verification expand the upside.</div>
+        </div>
+<div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40 mb-3">Q</div>
+          <div class="text-lg font-semibold mb-3">How does acquisition work?</div>
+          <div class="text-sm md:text-[15px] opacity-55 leading-relaxed">Private terms under NDA, escrow closing (Escrow.com or equivalent), then standard registrar transfer.</div>
+        </div>
+<div class="glass-panel rounded-3xl p-8 border-white/10">
+          <div class="text-[10px] uppercase tracking-[0.45em] font-bold opacity-40 mb-3">Q</div>
+          <div class="text-lg font-semibold mb-3">Why a 6–7 figure ask?</div>
+          <div class="text-sm md:text-[15px] opacity-55 leading-relaxed">Because category-grade domains behave like distribution assets: they reduce CAC, increase trust, and create a defensible naming moat competitors cannot replicate.</div>
+        </div>
+      </div>
+
+      <div class="mt-12 glass-panel p-10 rounded-[3rem] border-white/10 text-center">
+        <h3 class="serif text-4xl md:text-6xl font-light mb-8 italic text-white leading-tight">
+          Define the <span class="merit-gradient not-italic">Standard.</span>
+        </h3>
+        <p class="opacity-40 text-base md:text-lg mb-10 max-w-3xl mx-auto font-light leading-relaxed italic">
+          Secure the naming layer now—before the market consolidates around the platforms that feel inevitable.
+        </p>
+        <button id="openModalBottom" class="text-white font-extrabold uppercase tracking-[0.8em] text-[10px] hover:tracking-[1.0em] transition-all">
+          Initiate Private M&A Briefing &rarr;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 md:px-10 text-center">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-[10px] uppercase tracking-[0.55em] font-bold opacity-40">Property Notice</div>
+      <div class="mt-3 text-sm md:text-base opacity-75">
+        © 2026 <strong>Ranzo Tech LLC</strong>. This domain is the property of <strong>Ranzo Tech LLC</strong>.
+      </div>
+      <div class="mt-2 text-xs md:text-sm opacity-60">
+        Inquiries: <a class="underline" href="mailto:inquiries@w3.wedding">inquiries@w3.wedding</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-6 bg-black/95 backdrop-blur-2xl">
+    <div class="glass-panel w-full max-w-2xl p-10 md:p-14 rounded-[3rem] text-center border-white/20 relative">
+      <button id="closeModal" class="absolute top-5 right-6 text-white/60 hover:text-white text-2xl leading-none" aria-label="Close">×</button>
+
+      <h2 class="serif text-3xl md:text-4xl mb-4 italic merit-gradient leading-tight">Institutional M&A Briefing</h2>
+      <p class="text-[9px] opacity-40 mb-10 leading-relaxed uppercase tracking-[0.5em]">
+        Asset: w3.wedding | Intent: tokenization • verification • fractional ownership
+      </p>
+
+      <form id="inquiryForm" class="space-y-5 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input name="name" type="text" placeholder="Name" required class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+          <input name="email" type="email" placeholder="Corporate Email" required class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input name="company" type="text" placeholder="Company / Institution" class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+          <input name="role" type="text" placeholder="Role / Title" class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+        </div>
+
+        <select name="use" required class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+          <option value="" selected disabled>Primary use case</option>
+          <option>RWA tokenization portal</option><option>Marketplace + liquidity layer</option><option>Verification & provenance hub</option><option>Other</option>
+        </select>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <select name="budget" required class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+            <option value="" selected disabled>Budget range</option>
+            <option>6 figures (USD)</option>
+            <option>7 figures (USD)</option>
+            <option>6 figures (EUR)</option>
+            <option>7 figures (EUR)</option>
+            <option>Prefer not to say</option>
+          </select>
+          <select name="timeline" class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition outline-none text-sm">
+            <option value="" selected>Timeline (optional)</option>
+            <option>Immediate</option>
+            <option>30 days</option>
+            <option>60–90 days</option>
+            <option>Exploring</option>
+          </select>
+        </div>
+
+        <textarea name="message" placeholder="Strategic intent (e.g., issuance platform, verification hub, defensive category hold)"
+          required class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:border-white transition h-28 text-sm outline-none"></textarea>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+          <label class="flex items-start gap-3 opacity-70">
+            <input type="checkbox" name="ackSevenFigure" value="yes" required class="mt-1">
+            <span>I understand this is a high-value (6–7 figure) naming-layer asset.</span>
+          </label>
+          <label class="flex items-start gap-3 opacity-70">
+            <input type="checkbox" name="nda" value="requested" class="mt-1">
+            <span>NDA requested</span>
+          </label>
+        </div>
+
+        <input type="hidden" name="domain" value="w3.wedding">
+
+        <button type="submit" class="w-full py-5 bg-white text-black font-extrabold uppercase tracking-[0.5em] text-[10px] hover:bg-slate-200 transition rounded-2xl">
+          Request Full Asset Brief
+        </button>
+
+        <div id="formStatus" class="text-center text-sm opacity-70 min-h-[20px]"></div>
+        <div class="text-center text-[10px] uppercase tracking-[0.35em] opacity-40 font-bold">
+          Prefer email? <a class="underline" href="mailto:inquiries@w3.wedding?subject=Request%20Acquisition%20Brief%20%E2%80%94%20w3.wedding">inquiries@w3.wedding</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Modal controls
+    const modal = document.getElementById('modal');
+    const openers = ['openModalTop','openModalHero','openModalBottom'].map(id => document.getElementById(id)).filter(Boolean);
+    const closeBtn = document.getElementById('closeModal');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    openers.forEach(b => b.addEventListener('click', openModal));
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+    window.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeModal(); });
+
+    // Submit inquiry to shared API
+    const form = document.getElementById('inquiryForm');
+    const statusEl = document.getElementById('formStatus');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      statusEl.textContent = 'Sending…';
+      const fd = new FormData(form);
+      const payload = Object.fromEntries(fd.entries());
+      payload.domain = window.location.hostname || 'w3.wedding';
+      try {
+        const res = await fetch('https://w3.mortgage/api/inquiry.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(() => ({}));
+        if(res.ok && data.ok) {
+          statusEl.textContent = 'Sent. We will respond privately.';
+          form.reset();
+          setTimeout(closeModal, 900);
+          return;
+        }
+        statusEl.textContent = data.error || 'Delivery failed. Please email inquiries@w3.wedding.';
+      } catch(err) {
+        statusEl.textContent = 'Network error. Please email inquiries@w3.wedding.';
+      }
+    });
+  </script>
+
+</body>
+</html>
